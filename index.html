@@ -9,10 +9,12 @@
             var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
             if (isAndroid) {
                 // Redirect to the Play Store
-                window.location.href = 'https://play.google.com/store/apps/details?id=kr.co.onionorder.user';
+                location.assign("https://play.google.com/store/apps/details?id=kr.co.onionorder.user");
+                //window.location.href = 'https://play.google.com/store/apps/details?id=kr.co.onionorder.user';
             } else if (isiOS) {
                 // Redirect to the App Store
-                window.location.href = 'https://apps.apple.com/app/id6446350967';
+                location.assign("https://apps.apple.com/app/id6446350967");
+                //window.location.href = 'https://apps.apple.com/app/id6446350967';
             }
         }
     </script>
